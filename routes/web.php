@@ -13,6 +13,15 @@
 |
 */
 
-$router->get('/', function () use ($router) {
+$router->get('/version', function () use ($router) {
     return $router->app->version();
+});
+
+
+$router->get('/saludo', function () {
+    return 'Hola mi nombre cesar';
+});
+
+$router->post('/saludo', function () {
+    return 'Se creo un dato';
 });
